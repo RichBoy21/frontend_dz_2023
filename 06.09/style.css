@@ -6,6 +6,7 @@
 
 body {
     /* background-color: #ff63a6; */
+    height: 100vh;
     background: linear-gradient(to bottom, #6c63ff, #ff63a6);
 }
 
