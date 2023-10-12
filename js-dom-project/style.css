@@ -1,71 +1,158 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
-    height: 80vh;
+    font-family: Arial, sans-serif;
+    background-color: #d3cdcd;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #fff;
+}
+
+.container_two {
+    display: none;
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.login_form {
+    margin-top: 20px;
+
+}
+
+.order_form {
+
+    margin-top: 20px;
+}
+
+.order_form label {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.order_form input {
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.login_form h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.login_form label {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.login_form input {
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.login_form button {
+    background-color: #0755a7;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn {
+    display: none;
+    background-color: #0755a7;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 77px;
+}
+
+.login_modal {
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+    top: 0;
+    z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: opacity 0.3s;
+
 }
 
-form {
+.hidden {
+    display: none;
+}
+
+.login_message {
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
     width: 300px;
-    height: 210px;
-    border: 2px solid black;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 1.2);
-}
-
-
-
-.one {
-
-    color: rgb(7, 130, 130);
-}
-
-.two {
-    color: rgb(7, 130, 130);
-}
-
-#email {
-    border-radius: 5px;
-}
-
-#username {
-    border-radius: 5px;
-}
-
-#btn {
-    padding: 5px 20px;
-    background-color: rgb(171, 214, 200);
-    border: none;
-    border-radius: 5px;
-}
-
-.modal {}
-
-.modal_content {
     text-align: center;
-    width: 300px;
-    height: 210px;
-    border: 2px solid black;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 1.2);
-    border-radius: 15px;
-    margin: 75px;
-    font-size: 30px;
-    padding-top: 80px;
-    position: fixed;
-    top: 50px;
-    left: 100px;
-
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
 }
+
+.container_buttons {
+    display: flex;
+    gap: 20px;
+}
+
+
+#loader {
+    display: none;
+    position: absolute;
+}
+
+/* #closeModal {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    cursor: pointer;
+    color: #000;
+} */
