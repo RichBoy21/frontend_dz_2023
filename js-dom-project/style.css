@@ -149,10 +149,18 @@ body {
     position: absolute;
 }
 
-/* #closeModal {
+
+.close {
+    position: relative;
+    color: black;
+    bottom: 40px;
+    left: 130px;
+    font-size: 25px;
+}
+
+#closeModal {
     position: absolute;
     top: 50%;
     right: 50%;
     cursor: pointer;
-    color: #000;
-} */
+}

@@ -25,23 +25,23 @@
     <div class="container_two">
         <form class="order_form">
             <label for="address">Address:</label>
-            <input type="text">
+            <input type="text" id="address" required>
             <label for="unit_price">Unit price:</label>
-            <input type="number">
+            <input type="number" id="unit_price" required>
             <label for="price">Price:</label>
-            <input type="number">
+            <input type="number" id="price" required>
         </form>
     </div>
 
     <div class="container_buttons">
-        <button class="btn">Pay</button>
-        <button class="btn">Send</button>
-        <button class="btn">Accept</button>
-        <button class="btn">Complete</button>
+        <button class="btn" id="pay">Pay</button>
+        <button class="btn" id="send">Send</button>
+        <button class="btn" id="accept">Accept</button>
+        <button class="btn" id="complete">Complete</button>
     </div>
 
     <div class="login_modal">
-        <!-- <span class="close" id="closeModal">&times;</span> -->
+        <div class="close"> <span class="close" id="closeModal">&times;</span></div>
     </div>
 
     <div class="loader-container" id="loader">
