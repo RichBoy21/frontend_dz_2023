@@ -53,12 +53,13 @@ function processingOfRequest(data) {
 function showModal(message) {
   showMessage.textContent = message;
   showMessage.append(div_close);
+
   if (
     message === "Authenticated successfully!" ||
-    "Order has been paid!" ||
+    message === "Order has been paid!" ||
     message === "Order created!" ||
-    "Order is accepted!" ||
-    "Order completed!"
+    message === "Order is accepted!" ||
+    message === "Order completed!"
   ) {
     showMessage.style.color = "green";
     container_two.style.display = "block";
@@ -66,7 +67,9 @@ function showModal(message) {
       button.style.display = "block";
     });
     container.style.display = "none";
-  } else showMessage.style.color = "red";
+  } else {
+    showMessage.style.color = "red";
+  }
 
   login_modal.classList.remove("hidden");
 
